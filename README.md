@@ -1,4 +1,3 @@
-"# saygex69.vip-website" 
 https://iwatchmlp1212.github.io/saygex69.vip-website/
 
 <h1>↓↓↓↓↓↓↓↓↓↓↓↓↓↓ VUI LÒNG ĐỌC ↓↓↓↓↓↓↓↓↓↓↓↓↓↓</h1>
