@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/39fa9e302b.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
@@ -12,23 +13,49 @@
 </head>
 
 <body>
-    <div id="header">
-        <div class="p-5 bg-dark text-white text-center">
 
+    <div class="sidebar bg-dark text-white d-md-none" id="sidebar">
+        <div class="container">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./index.html">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./signin.html">Đăng Nhập</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="./signup.html">Đăng Ký</a>
+                </li>
+                <li class="nav-item"></li>
+                    <a class="nav-link text-white" href="./xemcudoantuong.html">Dịch vụ xem cu đoán tướng</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="sidebar-icon" class="d-lg-none">
+        <i class="fa-solid fa-bars fa-2xl text-secondary" aria-hidden="true" onclick="toggleSidebar()"></i>
+    </div>
+    
+    <div id="header" class="d-none d-lg-block">
+        <div class="p-5 bg-dark text-white text-center position-relative">
+    
             <div class="position-absolute start-0 translate-middle" style="padding-left: 300px;">
                 <a href="./index.html" id="logo-text" class="link-secondary">Saygex69</a>
             </div>
-
-            <div id="signup-signin" class="position-absolute end-0 translate-middle">
+            <div class="position-absolute start-0 translate-middle" style="padding-left: 800px;">
+                <a href="./xemcudoantuong.html">Dịch vụ xem cu đoán tướng (Thử nghiệm)</a>
+            </div>
+    
+            <div id="signup-signin" class="position-absolute end-0 translate-middle" style="padding-right: 30px;">
                 <button type="button" class="btn btn-primary btn-gradient m-2" onclick="window.location.href='./signin.html'">Đăng Nhập</button>
                 <button type="button" class="btn btn-primary btn-gradient" onclick="window.location.href='./signup.html'">Đăng Ký</button>
             </div>
         </div>
-
-        <!-- <div class="alert alert-success text-center" id="booking-status">Bạn đã book thành công. Hãy đăng nhập để xem lại lịch sử book!</div> -->
-
-        <h1 class="text-center text-uppercase text-danger bg-light">SayGex69.vip xin chào quý khách!</h1>
+    
     </div>
+    
+    <h1 class="text-center text-uppercase text-danger bg-light mb-0">SayGex69.vip xin chào quý khách!</h1>
 
     <div id="content" class="container">
         <!-- MODAL BELOW -->
@@ -61,11 +88,10 @@
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="welcomeModalLabel">Chào mừng đến với SayGex69</h5>
+                        <h1 class="modal-title text-danger" id="welcomeModalLabel">Vui Lòng Đọc!</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <h1 class="text-danger">VUI LÒNG ĐỌC</h1><hr>
                         <h4>
                             Dự án này chỉ mang tính chất giáo dục, nhằm cung cấp kiến thức và kỹ năng cho học viên trong quá trình học tập.
                         Mọi thông tin và nội dung trong dự án đều phục vụ cho mục đích học hỏi và nghiên cứu, không nhằm mục đích thương mại
@@ -78,8 +104,8 @@
                         <div class="text-center">
                             <a href="https://github.com/iwatchMLP1212/saygex69.vip-website">Mã nguồn & giấy phép (Github)</a>
                             <br><br>
-                            © 2024 Công Ty Trách Nhiệm Hữu Hạn Trần Duy Minh, Tổng Thống Dương Văn Minh & Đô Đốc Lê Đức Huy. <br>
-                            Giấy phép MIT / MIT License
+                            <a href="https://youtu.be/Hxgo-Qu-ZZE?si=5O6Vm_LsBtGinUB-&t=17" class="link-secondary">© 2024 Công Ty Trách Nhiệm Hữu Hạn Trần Duy Minh, Tổng Thống Dương Văn Minh & Đô Đốc Lê Đức Huy. <br>
+                                Giấy phép MIT / MIT License</a>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -112,10 +138,10 @@
             <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-center">
               <h5 class="text-uppercase">Theo dõi chúng tôi</h5>
               <ul class="list-unstyled">
-                <li><a href="#!" class="text-white">Facebook</a></li>
-                <li><a href="#!" class="text-white">Twitter</a></li>
-                <li><a href="#!" class="text-white">Instagram</a></li>
-                <li><a href="#!" class="text-white">LinkedIn</a></li>
+                <li><a href="https://www.youtube.com/watch?v=X85qwRSs5aU" class="text-white">Facebook</a></li>
+                <li><a href="https://www.youtube.com/watch?v=X85qwRSs5aU" class="text-white">Twitter</a></li>
+                <li><a href="https://www.youtube.com/watch?v=X85qwRSs5aU" class="text-white">Instagram</a></li>
+                <li><a href="https://www.youtube.com/watch?v=X85qwRSs5aU" class="text-white">LinkedIn</a></li>
               </ul>
             </div>
       

@@ -46,6 +46,15 @@ const load_furthur_html = () => {
     footer.style.display = 'block';
 };
 
+const toggleSidebar = () => {
+    var sidebar = document.getElementById('sidebar');
+    if (sidebar.style.display === 'none' || sidebar.style.display === '') {
+        sidebar.style.display = 'block';
+    } else {
+        sidebar.style.display = 'none';
+    }
+}
+
 window.onload = () => {
     get_data();
     var modalElement = document.getElementById('welcomeModal');

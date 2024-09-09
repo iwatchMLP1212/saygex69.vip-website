@@ -20,5 +20,28 @@
 
 #logo-text {
     text-decoration: none;
-    font-size: 40px;
+    font-size: 2rem;
+}
+
+#sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 30vh;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+#sidebar-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#sidebar-icon .btn {
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
