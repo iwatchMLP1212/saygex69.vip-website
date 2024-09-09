@@ -23,7 +23,7 @@ const load_data = (data) => {
                 <div class="card-body">
                     <h3 class="card-title">${bo.name}</h3>
                     <p class="card-text">${bo.description}</p>
-                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#myModal">
+                    <button type="button" class="btn btn-secondary btn-gradient" data-bs-toggle="modal" data-bs-target="#myModal">
                         Book ngay
                     </button>
                 </div>
@@ -37,8 +37,24 @@ const load_data = (data) => {
             container.appendChild(hr);
         }
     });
+
+    load_furthur_html();
+};
+
+const load_furthur_html = () => {
+    const footer = document.getElementsByTagName("footer")[0];
+    footer.style.display = 'block';
 };
 
 window.onload = () => {
     get_data();
+    var modalElement = document.getElementById('welcomeModal');
+
+    var myModal = new bootstrap.Modal(modalElement, {
+        keyboard: false,
+        backdrop: 'static'
+    });
+
+    myModal.show();
+
 };

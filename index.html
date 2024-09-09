@@ -14,42 +14,23 @@
 <body>
     <div id="header">
         <div class="p-5 bg-dark text-white text-center">
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-primary w-25" type="submit">Search</button>
-            </form>
+
+            <div class="position-absolute start-0 translate-middle" style="padding-left: 300px;">
+                <a href="./index.html" id="logo-text" class="link-secondary">Saygex69</a>
+            </div>
+
+            <div id="signup-signin" class="position-absolute end-0 translate-middle">
+                <button type="button" class="btn btn-primary btn-gradient m-2" onclick="window.location.href='./signin.html'">Đăng Nhập</button>
+                <button type="button" class="btn btn-primary btn-gradient" onclick="window.location.href='./signup.html'">Đăng Ký</button>
+            </div>
         </div>
 
-        <div class="alert alert-success text-center" id="booking-status">Bạn đã book thành công.</div>
+        <!-- <div class="alert alert-success text-center" id="booking-status">Bạn đã book thành công. Hãy đăng nhập để xem lại lịch sử book!</div> -->
 
         <h1 class="text-center text-uppercase text-danger bg-light">SayGex69.vip xin chào quý khách!</h1>
     </div>
 
-    <div id="launch-modal" class="modal fade" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Modal body text goes here.<span class="badge">By <a
-                                href="https://webdevrahul007.w3spaces.com/"></a>Rahul jangid</span></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div id="content" class="container">
-        <!-- <audio controls id="background-audio">
-            <source src="./jttw.mp3" type="audio/ogg">
-          Your browser does not support the audio element.
-          </audio> -->
-
         <!-- MODAL BELOW -->
         <!-- The Modal -->
         <div class="modal" id="myModal">
@@ -64,17 +45,50 @@
 
                     <!-- Modal body -->
                     <div class="modal-body">
-                        Ông bố đơn thân này đang sẵn sàng đến nhà bạn! Hãy chuẩn bị.
+                        Bạn đã book thành công. Vui lòng đăng nhập để xem lại lịch sử book!
                     </div>
 
                     <!-- Modal footer -->
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary btn-gradient" data-bs-dismiss="modal">Bỏ qua</button>
                     </div>
 
                 </div>
             </div>
         </div>
+
+        <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true" style="">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="welcomeModalLabel">Chào mừng đến với SayGex69</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h1 class="text-danger">VUI LÒNG ĐỌC</h1><hr>
+                        <h4>
+                            Dự án này chỉ mang tính chất giáo dục, nhằm cung cấp kiến thức và kỹ năng cho học viên trong quá trình học tập.
+                        Mọi thông tin và nội dung trong dự án đều phục vụ cho mục đích học hỏi và nghiên cứu, không nhằm mục đích thương mại
+                        hay vi phạm bản quyền. Dự án không có ý xúc phạm cá nhân hay tập thể nào, và người tham gia cần tuân thủ các quy định về đạo đức học thuật, 
+                        đảm bảo không sử dụng thông tin hoặc sản phẩm từ dự án vào các hoạt động không phù hợp với mục tiêu giáo dục đã đề ra.
+                        </h4>
+                        <hr>
+                        iwatchMLP1212 / Trần Duy Minh
+                        <br><br>
+                        <div class="text-center">
+                            <a href="https://github.com/iwatchMLP1212/saygex69.vip-website">Mã nguồn & giấy phép (Github)</a>
+                            <br><br>
+                            © 2024 Công Ty Trách Nhiệm Hữu Hạn Duy Minh và Tổng Thống Dương Văn Minh. <br>
+                            Giấy phép MIT / MIT License
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary btn-gradient" data-bs-dismiss="modal">Bỏ qua</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- MODEL ABOVE -->
 
         <div class="card" id="cac-ong-bo-don-than">
@@ -82,7 +96,7 @@
 
     </div>
 
-    <footer class="bg-dark text-white text-center text-lg-start">
+    <footer id="footer" class="bg-dark text-white text-center text-lg-start" style="display: none; margin-top: 100px;">
         <div class="container p-4">
           <div class="row">
             <!-- Column 1: About -->

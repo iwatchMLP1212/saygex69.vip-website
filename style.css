@@ -2,10 +2,6 @@
     margin-bottom: 30px;
 }
 
-.bo-don-than {
-    margin-bottom: 20px;
-}
-
 #booking-status {
     display: none;
 }
@@ -14,4 +10,15 @@
     width: 25vh;
     height: 23vh;
     object-fit: cover;
+}
+
+.btn-gradient {
+    background: linear-gradient(45deg, #0D6EFD, #0040a0);
+    border: none;
+    color: white;
+}
+
+#logo-text {
+    text-decoration: none;
+    font-size: 40px;
 }
