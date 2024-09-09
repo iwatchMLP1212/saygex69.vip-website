@@ -1,0 +1,17 @@
+#header {
+    margin-bottom: 30px;
+}
+
+.bo-don-than {
+    margin-bottom: 20px;
+}
+
+#booking-status {
+    display: none;
+}
+
+.bo-don-than-img {
+    width: 25vh;
+    height: 23vh;
+    object-fit: cover;
+}
