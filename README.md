@@ -1,14 +1,20 @@
 https://iwatchmlp1212.github.io/saygex69.vip-website/
 
-<h1>
-    TOÀN BỘ MÃ NGUỒN CỦA DỰ ÁN SAYGEX69.VIP
-</h1>
+<h1>↓↓↓↓↓↓↓↓↓↓↓↓↓↓ VUI LÒNG ĐỌC ↓↓↓↓↓↓↓↓↓↓↓↓↓↓</h1>
 
 <strong>Dự án này chỉ mang tính chất giáo dục, nhằm cung cấp kiến thức và kỹ năng cho học viên trong quá trình học tập.
 Mọi thông tin và nội dung trong dự án đều phục vụ cho mục đích học hỏi và nghiên cứu, không nhằm mục đích thương mại hay
 vi phạm bản quyền. Dự án không có ý xúc phạm cá nhân hay tập thể nào, và người tham gia cần tuân thủ
 các quy định về đạo đứchọc thuật, đảm bảo không sử dụng thông tin hoặc sản phẩm từ dự án vào các hoạt động không phù hợp
 với mục tiêu giáo dục đã đề ra.</strong>
+
+iwatchMLP1212 / Trần Duy Minh
+
+<hr>
+
+<h1>
+    TOÀN BỘ MÃ NGUỒN CỦA DỰ ÁN SAYGEX69.VIP
+</h1>
 
 <hr>
 
