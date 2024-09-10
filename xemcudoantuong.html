@@ -60,8 +60,48 @@
     </div>
 
   </div>
-  <div id="content" class="container">
 
+  <div class="text-center text-danger">
+    <h3>Chiều dài dương vật khi “mềm”: Khoảng 8.8 – 9.16 cm. Chiều dài dương vật khi cương cứng: Khoảng 12.9 – 14.2 cm.
+       Chu vi dương vật khi “mềm”: Trung bình khoảng 9 – 10 cm. Chu vi dương vật khi cương cứng: Trung bình khoảng 11 – 12 cm.
+       Tinh hoàn bình thường ở nam giới Việt có bán kính trung bình là 4 – 5,1 cm;
+      </h3>
+  </div>
+
+  <div id="content" class="container d-flex justify-content-center align-items-center" style="min-height: 50vh;">
+
+    <form style="margin-top: 100px; width: 50%;">
+      <div class="mb-3">
+        <label for="input-dick-w" class="form-label">Chiều dài dương vật (khi nứng, cm)</label>
+        <input type="number" class="form-control input-sm" id="input-dick-w" aria-describedby="w-dick-Help"
+          style="width: 100%;" required>
+        <div id="w-dick-help" class="form-text">Bảo mật - An toàn - Nhanh chóng</div>
+      </div>
+      <div class="mb-3">
+        <label for="input-dick-h" class="form-label">Chiều rộng/chu vi dương vật (khi nứng, cm)</label>
+        <input type="number" class="form-control input-sm" id="input-dick-h" style="width: 100%;" required>
+      </div>
+      <div class="mb-3" style="margin-top: 25px;">
+        <label for="input-dick-r1" class="form-label">Đường kính hòn dái thứ 1 (bên trái, cm)</label>
+        <input type="number" class="form-control" id="input-dick-r1" style="width: 100%;" required>
+      </div>
+      <div class="mb-3" style="margin-top: 25px;">
+        <label for="input-dick-r2" class="form-label">Đường kính hòn dái thứ 2 (bên phải, cm)</label>
+        <input type="number" class="form-control" id="input-dick-r2" style="width: 100%;" required>
+      </div>
+
+      <button type="button" class="btn btn-primary btn-gradient w-100" onclick="xem_cu_doan_tuong()">Xem tướng</button>
+    </form>
+
+  </div>
+
+  <div id="result" class="text-center" style="margin-top: 120px;">
+    <h3>Hệ số dương vật của quý khách là:</h3>
+    <h2 id="he-so-duong-vat" style="margin-bottom: 25px;"></h2>
+    <h1 class="text-danger" style="margin-bottom: 25px;">Vận hạn của bạn</h1>
+    <div id="van-han" class="container">
+
+    </div>
   </div>
 
   <footer id="footer" class="bg-dark text-white text-center text-lg-start" style="margin-top: 103px;">
@@ -98,8 +138,8 @@
         </div>
   </footer>
 
-  <script>
-    function toggleSidebar() {
+  <script src="./xemcudoantuong.js">
+    const toggleSidebar = () => {
       var sidebar = document.getElementById('sidebar');
       if (sidebar.style.display === 'none' || sidebar.style.display === '') {
         sidebar.style.display = 'block';
