@@ -66,29 +66,29 @@ const xem_cu_doan_tuong = () => {
     let van_han_ve_gia_dinh = 1;
 
     if (formula < 5) {
-        van_han_ve_tinh_yeu = 2;
-        van_han_ve_su_nghiep = 4;
-        van_han_ve_tai_chinh = 6;
-        van_han_ve_suc_khoe = 7;
-        van_han_ve_gia_dinh = 10;
-    } else if (formula >= 5 && formula < 10) {
-        van_han_ve_tinh_yeu = 4;
-        van_han_ve_su_nghiep = 3;
-        van_han_ve_tai_chinh = 6;
-        van_han_ve_suc_khoe = 7;
-        van_han_ve_gia_dinh = 9;
-    } else if (formula >= 10 && formula < 15) {
         van_han_ve_tinh_yeu = 1;
-        van_han_ve_su_nghiep = 4;
-        van_han_ve_tai_chinh = 6;
-        van_han_ve_suc_khoe = 7;
-        van_han_ve_gia_dinh = 9;
-    } else if (formula >= 15) {
+        van_han_ve_su_nghiep = 3;
+        van_han_ve_tai_chinh = 4;
+        van_han_ve_suc_khoe = 6;
+        van_han_ve_gia_dinh = 8;
+    } else if (formula >= 5 && formula < 10) {
         van_han_ve_tinh_yeu = 1;
         van_han_ve_su_nghiep = 3;
         van_han_ve_tai_chinh = 5;
-        van_han_ve_suc_khoe = 7;
+        van_han_ve_suc_khoe = 6;
         van_han_ve_gia_dinh = 9;
+    } else if (formula >= 10 && formula < 15) {
+        van_han_ve_tinh_yeu = 0;
+        van_han_ve_su_nghiep = 2;
+        van_han_ve_tai_chinh = 5;
+        van_han_ve_suc_khoe = 7;
+        van_han_ve_gia_dinh = 8;
+    } else if (formula >= 15) {
+        van_han_ve_tinh_yeu = 0;
+        van_han_ve_su_nghiep = 2;
+        van_han_ve_tai_chinh = 4;
+        van_han_ve_suc_khoe = 7;
+        van_han_ve_gia_dinh = 8;
     }
 
     // Display the results
@@ -118,4 +118,6 @@ const xem_cu_doan_tuong = () => {
             <h5>${van_han[van_han_ve_gia_dinh]}</h5>
         </div>
     `;
+
+    document.getElementById('result').style.display = 'block';
 };
