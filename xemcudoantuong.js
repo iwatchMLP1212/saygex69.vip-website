@@ -59,38 +59,36 @@ const xem_cu_doan_tuong = () => {
 
     document.getElementById('he-so-duong-vat').innerHTML = formula;
 
-    // Initialize the default van_han variables
     let van_han_ve_tinh_yeu = 1;
     let van_han_ve_su_nghiep = 1;
     let van_han_ve_tai_chinh = 1;
     let van_han_ve_suc_khoe = 1;
     let van_han_ve_gia_dinh = 1;
 
-    // Assign van_han based on formula value
     if (formula < 5) {
         van_han_ve_tinh_yeu = 2;
-        van_han_ve_su_nghiep = 2;
-        van_han_ve_tai_chinh = 2;
-        van_han_ve_suc_khoe = 1;
-        van_han_ve_gia_dinh = 2;
+        van_han_ve_su_nghiep = 4;
+        van_han_ve_tai_chinh = 6;
+        van_han_ve_suc_khoe = 7;
+        van_han_ve_gia_dinh = 10;
     } else if (formula >= 5 && formula < 10) {
-        van_han_ve_tinh_yeu = 2;
-        van_han_ve_su_nghiep = 1;
-        van_han_ve_tai_chinh = 2;
-        van_han_ve_suc_khoe = 1;
-        van_han_ve_gia_dinh = 1;
+        van_han_ve_tinh_yeu = 4;
+        van_han_ve_su_nghiep = 3;
+        van_han_ve_tai_chinh = 6;
+        van_han_ve_suc_khoe = 7;
+        van_han_ve_gia_dinh = 9;
     } else if (formula >= 10 && formula < 15) {
         van_han_ve_tinh_yeu = 1;
-        van_han_ve_su_nghiep = 2;
-        van_han_ve_tai_chinh = 2;
-        van_han_ve_suc_khoe = 1;
-        van_han_ve_gia_dinh = 1;
+        van_han_ve_su_nghiep = 4;
+        van_han_ve_tai_chinh = 6;
+        van_han_ve_suc_khoe = 7;
+        van_han_ve_gia_dinh = 9;
     } else if (formula >= 15) {
         van_han_ve_tinh_yeu = 1;
-        van_han_ve_su_nghiep = 1;
-        van_han_ve_tai_chinh = 1;
-        van_han_ve_suc_khoe = 2;
-        van_han_ve_gia_dinh = 1;
+        van_han_ve_su_nghiep = 3;
+        van_han_ve_tai_chinh = 5;
+        van_han_ve_suc_khoe = 7;
+        van_han_ve_gia_dinh = 9;
     }
 
     // Display the results
