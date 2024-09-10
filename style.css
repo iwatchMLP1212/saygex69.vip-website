@@ -18,6 +18,12 @@
     color: white;
 }
 
+.btn-gradient-yellow {
+    background: linear-gradient(45deg, #f9fd0d, #a08800);
+    border: none;
+    color: white;
+}
+
 #logo-text {
     text-decoration: none;
     font-size: 2rem;

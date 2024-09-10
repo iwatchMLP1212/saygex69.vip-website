@@ -65,6 +65,12 @@ const xem_cu_doan_tuong = () => {
     let van_han_ve_suc_khoe = 1;
     let van_han_ve_gia_dinh = 1;
 
+// Tinh yeu: 0,1
+// Cong viec: 2, 3
+// Tai chinh: 4, 5
+// Suc khoe: 6, 7
+// Gia dinh: 8, 9
+
     if (formula < 5) {
         van_han_ve_tinh_yeu = 1;
         van_han_ve_su_nghiep = 3;
