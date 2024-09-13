@@ -1,5 +1,5 @@
 const get_data = () => {
-    fetch('https://iwatchmlp1212.github.io/saygex69.vip-website/ong_bo_don_than.json')
+    fetch('/ong_bo_don_than.json')
         .then((response) => response.json())
         .then((json) => {
             load_data(json);
