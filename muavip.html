@@ -4,17 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="loggedIn.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="muavip_style.css">
     <script src="https://kit.fontawesome.com/39fa9e302b.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
-    <title>Đăng Nhập - Say Gex 69</title>
+    <title>Mua Vip - Say Gex 69</title>
 </head>
 
 <body>
@@ -31,7 +30,7 @@
                     <a class="nav-link text-white" href="./signup.html">Đăng Ký</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link text-white" href="./xemcudoantuong.html">Dịch vụ xem cu đoán tướng</a>
+                    <a class="nav-link text-white" href="./xemcudoantuong.html">Dịch vụ xem cu đoán tướng</a>
                 </li>
             </ul>
         </div>
@@ -52,58 +51,164 @@
             </div>
 
             <div id="signup-signin" class="position-absolute end-0 translate-middle" style="padding-right: 30px;">
-                <button type="button" class="btn btn-primary btn-gradient m-2"
+                <button type="button" id="signin-btn" class="btn btn-primary btn-gradient m-2"
                     onclick="window.location.href='./signin.html'">Đăng Nhập</button>
-                <button type="button" class="btn btn-primary btn-gradient"
+                <button type="button" id="signup-btn" class="btn btn-primary btn-gradient"
                     onclick="window.location.href='./signup.html'">Đăng Ký</button>
             </div>
         </div>
 
     </div>
 
-    <div id="content" class="container">
-        <h2 class="text-center">Các gói dịch vụ vip</h2>
+    <div class="container">
+
+        <div class="modal fade" id="payment-modal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title text-danger" id="welcomeModalLabel">Thanh toán!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#thecao" type="button" role="tab" aria-controls="thecao"
+                                    aria-selected="true">Thẻ cào</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                                    type="button" role="tab" aria-controls="profile" aria-selected="false">Ngân
+                                    hàng</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="thecao" role="tabpanel"
+                                aria-labelledby="home-tab">
+                                <div class="container text-center">
+                                    <div id="loai-the" class="mt-4">
+                                        <h4>Loại thẻ:</h4>
+                                        <select name="Loại thẻ">
+                                            <option value="viettel">Viettel</option>
+                                            <option value="vinaphone">Vinaphone</option>
+                                            <option value="mobifone">MobiFone</option>
+                                        </select>
+                                    </div>
+                                    <div id="menh-gia" class="mt-4">
+                                        <h4>Mệnh giá:</h4>
+                                        <select name="Loại thẻ">
+                                            <option value="50">50k</option>
+                                            <option value="100">100k</option>
+                                            <option value="200">200k</option>
+                                            <option value="500">500k</option>
+                                            <option value="1m">1 triệu</option>
+                                        </select>
+                                    </div>
+
+                                    <div id="seri-number" class="mt-4">
+                                        <h4>Số seri:</h4>
+                                        <input>
+                                    </div>
+                                    <div id="code-number" class="mt-4">
+                                        <h4>Mã thẻ:</h4>
+                                        <input>
+                                    </div>
+                                </div>
+                                <button>Nạp thẻ</button>
+
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                Đang cập nhật...
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="text-center">
+                            <br><br>
+                            <a href="#" class="link-secondary">© 2024 Công Ty Trách Nhiệm Hữu Hạn Trần Duy Minh, Tổng
+                                Thống Dương Văn Minh & Đô Đốc Lê Đức Huy. <br>
+                                Giấy phép MIT / MIT License</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- MODEL ABOVE -->
+
+        <div class="pricing-header mb-4">
+            <h1>Các gói dịch vụ</h1>
+            <p class="lead">Mua ngay để được hưởng các ưu đãi có hạn tại Saygex69.</p>
+        </div>
+
         <div class="row text-center">
-            <div class="card col m-1">
-                <div class="card-header my-0 font-weight-normal"><h4>Vip Thường</h4></div>
-                <div class="card-body">
-                    <h2>70k / tháng</h2> <hr>
-                    <h6>Quyền truy cập khu vực Vip <br><br>
-                        Các đặc quyền vip <br><br>
-                        Hỗ trợ tổng đài vip 24/7
-                    </h6>
-                    <p>Kèm theo các đặc quyền của gói miễn phí</p> <br><br><br>
-                    <button type="button" class="btn btn-lg btn-gradient-yellow btn-outline-dark">Đăng ký ngay</button>
+            <!-- Free Plan -->
+            <div class="col-md-4 mb-4">
+                <div class="card pricing-card">
+                    <div class="card-header">
+                        <h1 class="my-0 fw-normal">Thường</h1>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Miễn phí</h2>
+                        <ul class="list-unstyled mt-3 mb-4" style="padding-bottom: 45px;">
+                            <li>Truy cập vào dịch vụ xem cu đoán tướng</li>
+                            <li>Tối đa 10 giờ làm tình mỗi ngày</li>
+                            <li>Hỗ trợ qua email</li>
+                            <li>Truy cập vào khu vực thường</li>
+                            <li>Miễn phí 2 giờ video</li>
+                        </ul>
+                        <button type="button" id="mienphi-btn" class="w-100 btn btn-lg btn-outline-primary">Đăng nhập để
+                            nhận miễn
+                            phí</button>
+                    </div>
                 </div>
             </div>
-            <div class="card col m-1">
-                <div class="card-header my-0 font-weight-normal"><h4>Premium</h4></div>
-                <div class="card-body">
-                    <h2>300k / tháng</h2> <hr>
-                    <h6>Quyền truy cập khu vực Premium <br><br>
-                        Các đặc quyền vip <br><br>
-                        Nhóm hỗ trợ riêng <br><br>
-                        Các ông bố đơn thân được giảm giá 10%
-                    </h6>
-                    <p>Kèm theo các đặc quyền của Vip</p> <br>
-                    <button type="button" class="btn btn-lg btn-gradient-yellow btn-outline-dark">Đăng ký ngay</button>
+
+            <!-- Pro Plan -->
+            <div class="col-md-4 mb-4">
+                <div class="card pricing-card">
+                    <div class="card-header">
+                        <h1 class="my-0 fw-normal">Vip</h1>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title">49k <small class="text-muted">/ tháng</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4" style="padding-bottom: 25px;">
+                            <li>2 lần sục cặc chéo với anh Ba miễn phí</li>
+                            <li>Danh hiệu Vip</li>
+                            <li>Ưu tiên hỗ trợ qua email</li>
+                            <li>Truy cập vào khu vực Vip</li>
+                            <li>Miễn phí 20 giờ video</li>
+                        </ul>
+                        <button type="button" id="vip-btn" class="w-100 btn btn-lg btn-primary">Đăng nhập để
+                            mua</button>
+                    </div>
                 </div>
             </div>
-            <div class="card col m-1">
-                <div class="card-header my-0 font-weight-normal"><h4>Michael Jackson</h4></div>
-                <div class="card-body">
-                    <h2>7 triệu / tháng</h2> <hr>
-                    <h6>Quyền truy cập khu vực Michael Jackson <br><br>
-                        Quyền truy cập các tư liệu ngầm liên quan đến Michael Jackson <br><br>
-                        Các ông bố đơn thân được giảm giá 25% <br><br>
-                        Người hỗ trợ riêng (phản hồi dưới 1 phút)
-                    </h6>
-                    <p>Kèm theo các đặc quyền của Vip và Premium</p> <br>
-                    <button type="button" class="btn btn-lg btn-gradient-yellow btn-outline-dark">Đăng ký ngay</button>
+
+            <div class="col-md-4 mb-4">
+                <div class="card pricing-card">
+                    <div class="card-header">
+                        <h1 class="my-0 fw-normal">Siêu Đen</h1>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title">699k <small class="text-muted">/ tháng</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>3 giờ làm tình với anh Ba miễn phí mỗi 2 tuần</li>
+                            <li>Danh hiệu siêu đen bóng bẩy mạnh bạo</li>
+                            <li>Tất cả dịch vụ được giảm giá 20%</li>
+                            <li>Hỗ trợ qua số điện thoại và email</li>
+                            <li>Truy cập vào khu vực siêu đen</li>
+                            <li>Miễn phí 50 giờ video</li>
+                        </ul>
+                        <button type="button" id="sieuden-btn" class="w-100 btn btn-lg btn-primary"
+                            data-bs-toggle="modal" data-bs-target="#payment-modal">Đăng nhập để mua</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+
 
     <footer id="footer" class="bg-dark text-white text-center text-lg-start" style="margin-top: 103px;">
         <div class="container p-4">
@@ -117,7 +222,7 @@
                         đít. Cùng các tư thế sex gay kích thích như BDSM, sục cặc chéo,... Vân vân. Cùng
                         các dịch vụ làm sạch khác như liếm lỗ đít, liếm dái và nuốt lưỡi. Còn chần chờ gì nữa mà không
                         book ngay một
-                        ông bố đơn thân trên saygex69.vip!
+                        ông bố đơn thân trên saygex69 online!
                     </p>
                 </div>
 
@@ -141,6 +246,7 @@
                 </div>
     </footer>
 
+
     <script>
         function toggleSidebar() {
             var sidebar = document.getElementById('sidebar');
@@ -148,8 +254,8 @@
                 sidebar.style.display = 'block';
             } else {
                 sidebar.style.display = 'none';
-            }
-        }
+            };
+        };
     </script>
 </body>
 

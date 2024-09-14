@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="loggedIn.js" defer></script>
   <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/39fa9e302b.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -52,9 +53,9 @@
       </div>
 
       <div id="signup-signin" class="position-absolute end-0 translate-middle" style="padding-right: 30px;">
-        <button type="button" class="btn btn-primary btn-gradient m-2"
+        <button type="button" id="signin-btn" class="btn btn-primary btn-gradient m-2"
           onclick="window.location.href='./signin.html'">Đăng Nhập</button>
-        <button type="button" class="btn btn-primary btn-gradient" onclick="window.location.href='./signup.html'">Đăng
+        <button type="button" id="signup-btn" class="btn btn-primary btn-gradient" onclick="window.location.href='./signup.html'">Đăng
           Ký</button>
       </div>
     </div>
@@ -62,25 +63,26 @@
   </div>
 
   <div id="content" class="container">
-    <form style="margin-top: 100px;">
+    <form style="margin-top: 100px;" id="login-form">
       <div class="mb-3">
-        <label for="input-email" class="form-label">Tên tài khoản</label>
-        <input type="email" class="form-control" id="input-email" aria-describedby="emailHelp">
+        <label for="input-email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="input-email" aria-describedby="emailHelp" required>
         <div id="email-help" class="form-text">Bảo mật - An toàn - Nhanh chóng</div>
       </div>
       <div class="mb-3" style="margin-top: 25px;">
         <label for="input-password" class="form-label">Mật khẩu</label>
-        <input type="password" class="form-control" id="input-password">
+        <input type="password" class="form-control" id="input-password" required>
       </div>
       <div class="mb-3 form-check">
         <input type="checkbox" class="form-check-input" id="remember-me-btn">
         <label class="form-check-label" for="remember-me-btn">Ghi nhớ đăng nhập</label>
       </div>
       <button type="submit" class="btn btn-primary btn-gradient">Đăng Nhập</button>
+      <div id="error-message" style="color:red; margin-top: 15px;"></div>
     </form>
   </div>
 
-  <footer id="footer" class="bg-dark text-white text-center text-lg-start" style="margin-top: 103px;">
+  <footer id="footer" class="bg-dark text-white text-center text-lg-start" style="margin-top: 183px;">
     <div class="container p-4">
       <div class="row">
         <!-- Column 1: About -->
@@ -90,7 +92,7 @@
             Chúng tôi tự hào là dịch vụ các ông bố đơn thân số 1 Việt Nam với tỉ lệ sex gay lên đến 99% các bạn bị thông
             đít. Cùng các tư thế sex gay kích thích như BDSM, sục cặc chéo,... Vân vân. Cùng
             các dịch vụ làm sạch khác như liếm lỗ đít, liếm dái và nuốt lưỡi. Còn chần chờ gì nữa mà không book ngay một
-            ông bố đơn thân trên saygex69.vip!
+            ông bố đơn thân trên saygex69 online!
           </p>
         </div>
 
@@ -124,6 +126,7 @@
       }
     }
   </script>
+  <script src="firebase.js" type="module" defer></script>
 </body>
-
+ 
 </html>
