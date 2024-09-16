@@ -64,11 +64,15 @@ document.getElementById('login-form')?.addEventListener('submit', function (even
     .then((userCredential) => {
       // Signed in successfully
       const user = userCredential.user;
-      alert('User signed in successfully!');
       if (rememberMe) {
         const encodedEmail = encodeBase64(email);
         localStorage.setItem('dXNlckVtYWls', encodedEmail);
       }
+
+      // Ensure localStorage is written before reloading
+      setTimeout(() => {
+        window.location.reload();
+      }, 100); // small delay to ensure localStorage writes before reload
     })
     .catch((error) => {
       // Handle errors
@@ -87,6 +91,7 @@ function decodeBase64(encodedStr) {
   return atob(encodedStr); // atob() decodes a Base64 encoded string
 }
 
+// Function to check if the user has bought a service
 async function check_service(user_id, bought_service) {
   try {
     console.log("Checking service for user ID:", user_id, "and bought service:", bought_service);
@@ -94,20 +99,14 @@ async function check_service(user_id, bought_service) {
     const userBoughtServiceRef = collection(db, 'user-bought-service');
     const q = query(userBoughtServiceRef, where('user_id', '==', user_id), where('bought_service', '==', bought_service));
 
-    // Log the query details
-    // console.log("Constructed Query:", q);
-
     const querySnapshot = await getDocs(q);
-    // console.log("QuerySnapshot size:", querySnapshot.size);
 
     if (querySnapshot.empty) {
-      // console.log('No matching documents found.');
       return false;
     } else {
       querySnapshot.forEach((doc) => {
         console.log("Document data:", doc.data());
       });
-      // console.log('Service has been purchased.');
       return true;
     }
   } catch (error) {
@@ -116,21 +115,23 @@ async function check_service(user_id, bought_service) {
   }
 }
 
+// Check if localStorage for bought service exists
 if (localStorage.getItem('Ym91Z2h0X3NlcnZpY2U=') === null) {
   console.log('localStorage for bought service has not been created!');
-  localStorage.setItem('Ym91Z2h0X3NlcnZpY2U=', 'bWllbnBoaQ==')
-};
+  localStorage.setItem('Ym91Z2h0X3NlcnZpY2U=', 'bWllbnBoaQ==');
+}
 
+// Uncomment this to check service when needed
 // const userId = decodeBase64(localStorage.getItem('dXNlckVtYWls')).trim();
-//   const service = 'sieuden'.trim();
+// const service = 'sieuden'.trim();
 
-//   check_service(userId, service).then((result) => {
-//     if (result) {
-//       console.log('The user has already bought sieuden.');
-//       localStorage.setItem('Ym91Z2h0X3NlcnZpY2U=', 'c2lldWRlbg==')
-//     } else {
-//       console.log('The user has not bought sieuden.');
-//     }
-//   }).catch((error) => {
-//     console.error("Error in check_service function:", error.message);
-//   });
+// check_service(userId, service).then((result) => {
+//   if (result) {
+//     console.log('The user has already bought sieuden.');
+//     localStorage.setItem('Ym91Z2h0X3NlcnZpY2U=', 'c2lldWRlbg==');
+//   } else {
+//     console.log('The user has not bought sieuden.');
+//   }
+// }).catch((error) => {
+//   console.error("Error in check_service function:", error.message);
+// });

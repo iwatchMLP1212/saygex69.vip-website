@@ -24,10 +24,10 @@
                     <a class="nav-link text-white" href="./index.html">Trang chủ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="./signin.html">Đăng Nhập</a>
+                    <a class="nav-link text-white" href="./signin.html" id="signin-btn-mobile">Đăng Nhập</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="./signup.html">Đăng Ký</a>
+                    <a class="nav-link text-white" href="./signup.html" id="signup-btn-mobile">Đăng Ký</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white" href="./xemcudoantuong.html">Dịch vụ xem cu đoán tướng</a>
@@ -62,70 +62,28 @@
 
     <div class="container">
 
-        <div class="modal fade" id="payment-modal" tabindex="-1">
+        <div class="modal fade" id="payment-modal-sieuden" tabindex="-1">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1 class="modal-title text-danger" id="welcomeModalLabel">Thanh toán!</h1>
+                        <h1 class="modal-title text-danger">Thanh toán gói Siêu Đen!</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
-                                    data-bs-target="#thecao" type="button" role="tab" aria-controls="thecao"
-                                    aria-selected="true">Thẻ cào</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                                    type="button" role="tab" aria-controls="profile" aria-selected="false">Ngân
-                                    hàng</button>
-                            </li>
-                        </ul>
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="thecao" role="tabpanel"
-                                aria-labelledby="home-tab">
-                                <div class="container text-center">
-                                    <div id="loai-the" class="mt-4">
-                                        <h4>Loại thẻ:</h4>
-                                        <select name="Loại thẻ">
-                                            <option value="viettel">Viettel</option>
-                                            <option value="vinaphone">Vinaphone</option>
-                                            <option value="mobifone">MobiFone</option>
-                                        </select>
-                                    </div>
-                                    <div id="menh-gia" class="mt-4">
-                                        <h4>Mệnh giá:</h4>
-                                        <select name="Loại thẻ">
-                                            <option value="50">50k</option>
-                                            <option value="100">100k</option>
-                                            <option value="200">200k</option>
-                                            <option value="500">500k</option>
-                                            <option value="1m">1 triệu</option>
-                                        </select>
-                                    </div>
-
-                                    <div id="seri-number" class="mt-4">
-                                        <h4>Số seri:</h4>
-                                        <input>
-                                    </div>
-                                    <div id="code-number" class="mt-4">
-                                        <h4>Mã thẻ:</h4>
-                                        <input>
-                                    </div>
-                                </div>
-                                <button>Nạp thẻ</button>
-
-                            </div>
-                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                Đang cập nhật...
-                            </div>
-                        </div>
+                    <div class="modal-body text-center">
+                        <h2>Chuyển khoản:</h2>
+                        <h4 class="text-muted">TRAN DUY MINH</h4>
+                        <h5 class="text-muted">Agribank</h5>
+                        <h5 class="text-muted">Số tài khoản: 5905205694295</h5>
+                        <h5 class="text-muted">699k cho một tháng</h5>
+                        <img src="./images/QR_sieuden.png" alt="QR code" class="mb-4">
+                        <h4 class="text-danger">NỘI DUNG CHUYỂN KHOẢN GHI KÈM EMAIL CỦA TÀI KHOẢN (CHÚNG TÔI KHÔNG CHỊU
+                            TRÁCH NGHIỆM VỚI TRƯỜNG HỢP KHÔNG CÓ EMAIL. DỊCH VỤ MẤT DƯỚI 2 NGÀY ĐỂ XỬ LÝ)</h4>
                         <hr>
                         <div class="text-center">
                             <br><br>
-                            <a href="#" class="link-secondary">© 2024 Công Ty Trách Nhiệm Hữu Hạn Trần Duy Minh, Tổng
-                                Thống Dương Văn Minh & Đô Đốc Lê Đức Huy. <br>
+                            <a href="https://youtu.be/Hxgo-Qu-ZZE?si=5O6Vm_LsBtGinUB-&t=17" class="link-secondary">©
+                                2024 Công Ty Trách Nhiệm Hữu Hạn Trần Duy Minh, Tổng Thống Dương Văn Minh & Đô Đốc Lê
+                                Đức Huy. <br>
                                 Giấy phép MIT / MIT License</a>
                         </div>
                     </div>
@@ -133,12 +91,62 @@
             </div>
         </div>
 
+        <div class="modal fade" id="payment-modal-vip" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title text-danger" id="welcomeModalLabel">Thanh toán gói VIP!</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h2>Chuyển khoản:</h2>
+                        <h4 class="text-muted">TRAN DUY MINH</h4>
+                        <h5 class="text-muted">Agribank</h5>
+                        <h5 class="text-muted">Số tài khoản: 5905205694295</h5>
+                        <h5 class="text-muted">49k cho một tháng</h5>
+                        <img src="./images/QR_vip.png" alt="QR code" class="mb-4">
+                        <h4 class="text-danger">NỘI DUNG CHUYỂN KHOẢN GHI KÈM EMAIL CỦA TÀI KHOẢN (CHÚNG TÔI KHÔNG CHỊU
+                            TRÁCH NGHIỆM VỚI TRƯỜNG HỢP KHÔNG CÓ EMAIL. DỊCH VỤ MẤT DƯỚI 2 NGÀY ĐỂ XỬ LÝ)</h4>
+                        <hr>
+                        <div class="text-center">
+                            <br><br>
+                            <a href="https://youtu.be/Hxgo-Qu-ZZE?si=5O6Vm_LsBtGinUB-&t=17" class="link-secondary">©
+                                2024 Công Ty Trách Nhiệm Hữu Hạn Trần Duy Minh, Tổng Thống Dương Văn Minh & Đô Đốc Lê
+                                Đức Huy. <br>
+                                Giấy phép MIT / MIT License</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <!-- MODEL ABOVE -->
+        <div class="modal fade" id="signin-modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header mb-4">
+                        <h2 class="modal-title text-danger" id="welcomeModalLabel">Vui lòng đăng nhập để mua!</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <button type="button" id="signin-btn" class="btn btn-primary btn-gradient m-2"
+                            onclick="window.location.href='./signin.html'">Đăng Nhập</button>
+                        <button type="button" id="signup-btn" class="btn btn-primary btn-gradient"
+                            onclick="window.location.href='./signup.html'">Đăng Ký</button>
+                        <div class="text-center">
+                            <br><br><hr>
+                            <a href="https://youtu.be/Hxgo-Qu-ZZE?si=5O6Vm_LsBtGinUB-&t=17" class="link-secondary">©
+                                2024 Công Ty Trách Nhiệm Hữu Hạn Trần Duy Minh, Tổng Thống Dương Văn Minh & Đô Đốc Lê
+                                Đức Huy. <br>
+                                Giấy phép MIT / MIT License</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="pricing-header mb-4">
             <h1>Các gói dịch vụ</h1>
-            <p class="lead">Mua ngay để được hưởng các ưu đãi có hạn tại Saygex69.</p>
+            <p class="lead">Mua ngay để được hưởng các ưu đãi có hạn.</p>
         </div>
 
         <div class="row text-center">
@@ -151,15 +159,14 @@
                     <div class="card-body">
                         <h2 class="card-title">Miễn phí</h2>
                         <ul class="list-unstyled mt-3 mb-4" style="padding-bottom: 45px;">
-                            <li>Truy cập vào dịch vụ xem cu đoán tướng</li>
-                            <li>Tối đa 10 giờ làm tình mỗi ngày</li>
+                            <li>Truy cập cơ bản vào dịch vụ</li>
+                            <li>Tối đa 10 giờ truy cập mỗi ngày</li>
                             <li>Hỗ trợ qua email</li>
                             <li>Truy cập vào khu vực thường</li>
                             <li>Miễn phí 2 giờ video</li>
                         </ul>
                         <button type="button" id="mienphi-btn" class="w-100 btn btn-lg btn-outline-primary">Đăng nhập để
-                            nhận miễn
-                            phí</button>
+                            nhận miễn phí</button>
                     </div>
                 </div>
             </div>
@@ -168,15 +175,14 @@
             <div class="col-md-4 mb-4">
                 <div class="card pricing-card">
                     <div class="card-header">
-                        <h1 class="my-0 fw-normal">Vip</h1>
+                        <h1 class="my-0 fw-normal">VIP</h1>
                     </div>
                     <div class="card-body">
                         <h1 class="card-title">49k <small class="text-muted">/ tháng</small></h1>
-                        <ul class="list-unstyled mt-3 mb-4" style="padding-bottom: 25px;">
-                            <li>2 lần sục cặc chéo với anh Ba miễn phí</li>
-                            <li>Danh hiệu Vip</li>
+                        <ul class="list-unstyled mt-3 mb-4" style="padding-bottom: 59px;">
                             <li>Ưu tiên hỗ trợ qua email</li>
-                            <li>Truy cập vào khu vực Vip</li>
+                            <li>Danh hiệu VIP</li>
+                            <li>Truy cập vào khu vực VIP</li>
                             <li>Miễn phí 20 giờ video</li>
                         </ul>
                         <button type="button" id="vip-btn" class="w-100 btn btn-lg btn-primary">Đăng nhập để
@@ -185,6 +191,7 @@
                 </div>
             </div>
 
+            <!-- Premium Plan -->
             <div class="col-md-4 mb-4">
                 <div class="card pricing-card">
                     <div class="card-header">
@@ -192,16 +199,15 @@
                     </div>
                     <div class="card-body">
                         <h1 class="card-title">699k <small class="text-muted">/ tháng</small></h1>
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li>3 giờ làm tình với anh Ba miễn phí mỗi 2 tuần</li>
-                            <li>Danh hiệu siêu đen bóng bẩy mạnh bạo</li>
-                            <li>Tất cả dịch vụ được giảm giá 20%</li>
-                            <li>Hỗ trợ qua số điện thoại và email</li>
-                            <li>Truy cập vào khu vực siêu đen</li>
+                        <ul class="list-unstyled mt-3 mb-4" style="padding-bottom: 35px;">
+                            <li>Ưu tiên hỗ trợ qua điện thoại và email</li>
+                            <li>Danh hiệu Siêu Đen</li>
+                            <li>Giảm giá 20% cho các dịch vụ</li>
+                            <li>Truy cập vào khu vực Siêu Đen</li>
                             <li>Miễn phí 50 giờ video</li>
                         </ul>
-                        <button type="button" id="sieuden-btn" class="w-100 btn btn-lg btn-primary"
-                            data-bs-toggle="modal" data-bs-target="#payment-modal">Đăng nhập để mua</button>
+                        <button type="button" id="sieuden-btn" class="w-100 btn btn-lg btn-primary">Đăng nhập để
+                            mua</button>
                     </div>
                 </div>
             </div>
@@ -210,7 +216,8 @@
 
 
 
-    <footer id="footer" class="bg-dark text-white text-center text-lg-start" style="margin-top: 103px;">
+
+    <footer id="footer" class="bg-dark text-white text-center text-lg-start" style="display: none; margin-top: 100px;">
         <div class="container p-4">
             <div class="row">
                 <!-- Column 1: About -->
@@ -218,11 +225,9 @@
                     <h5 class="text-uppercase">Sứ mệnh của chúng tôi</h5>
                     <p>
                         Chúng tôi tự hào là dịch vụ các ông bố đơn thân số 1 Việt Nam với tỉ lệ sex gay lên đến 99% các
-                        bạn bị thông
-                        đít. Cùng các tư thế sex gay kích thích như BDSM, sục cặc chéo,... Vân vân. Cùng
+                        bạn bị thông đít. Cùng các tư thế sex gay kích thích như BDSM, sục cặc chéo,... Vân vân. Cùng
                         các dịch vụ làm sạch khác như liếm lỗ đít, liếm dái và nuốt lưỡi. Còn chần chờ gì nữa mà không
-                        book ngay một
-                        ông bố đơn thân trên saygex69 online!
+                        book ngay một ông bố đơn thân trên saygex69 online!
                     </p>
                 </div>
 
@@ -230,10 +235,10 @@
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-center">
                     <h5 class="text-uppercase">Theo dõi chúng tôi</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#!" class="text-white">Facebook</a></li>
-                        <li><a href="#!" class="text-white">Twitter</a></li>
-                        <li><a href="#!" class="text-white">Instagram</a></li>
-                        <li><a href="#!" class="text-white">LinkedIn</a></li>
+                        <li><a href="https://www.youtube.com/@Saysgex69" class="text-white">Youtube</a></li>
+                        <li><a href="https://www.youtube.com/@Saysgex69" class="text-white">Facebook</a></li>
+                        <li><a href="https://www.youtube.com/@Saysgex69" class="text-white">Twitter</a></li>
+                        <li><a href="https://www.youtube.com/@Saysgex69" class="text-white">Instagram</a></li>
                     </ul>
                 </div>
 
@@ -245,7 +250,6 @@
                     © 2024 Duy Minh, President Duong Van Minh & Admiral Le Duc Huy LLC.
                 </div>
     </footer>
-
 
     <script>
         function toggleSidebar() {

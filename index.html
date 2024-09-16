@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/39fa9e302b.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
     <title>Say Gex 69</title>
 </head>
 
@@ -21,16 +26,16 @@
                     <a class="nav-link text-white" href="./index.html">Trang chủ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="./signin.html">Đăng Nhập</a>
+                    <a class="nav-link text-white" href="./signin.html" id="signin-btn-mobile">Đăng Nhập</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="./signup.html">Đăng Ký</a>
+                    <a class="nav-link text-white" href="./signup.html" id="signup-btn-mobile">Đăng Ký</a>
                 </li>
                 <li class="nav-item"></li>
-                    <a class="nav-link text-white" href="./xemcudoantuong.html">Dịch vụ xem cu đoán tướng</a>
+                <a class="nav-link text-white" href="./xemcudoantuong.html">Dịch vụ xem cu đoán tướng</a>
                 </li>
                 <li class="nav-item"></li>
-                    <a class="nav-link text-white" href="./muavip.html">Các gói trả tiền</a>
+                <a class="nav-link text-white" href="./muavip.html">Các gói trả tiền</a>
                 </li>
             </ul>
         </div>
@@ -39,26 +44,29 @@
     <div id="sidebar-icon" class="d-lg-none">
         <i class="fa-solid fa-bars fa-2xl text-secondary" aria-hidden="true" onclick="toggleSidebar()"></i>
     </div>
-    
+
     <div id="header" class="d-none d-lg-block">
         <div class="p-5 bg-dark text-white text-center position-relative">
-    
+
             <div class="position-absolute start-0 translate-middle" style="padding-left: 300px;">
                 <a href="./index.html" id="logo-text" class="link-secondary">Saygex69</a>
             </div>
             <div class="position-absolute start-0 translate-middle" style="padding-left: 800px;">
                 <a href="./xemcudoantuong.html">Dịch vụ xem cu đoán tướng (Thử nghiệm)</a>
             </div>
-    
+
             <div id="signup-signin" class="position-absolute end-0 translate-middle" style="padding-right: 30px;">
-                <button type="button" id="signin-btn" class="btn btn-primary btn-gradient m-2" onclick="window.location.href='./signin.html'">Đăng Nhập</button>
-                <button type="button" id="signup-btn" class="btn btn-primary btn-gradient me-1" onclick="window.location.href='./signup.html'">Đăng Ký</button>
-                <button type="button" class="btn btn-gradient-yellow" onclick="window.location.href='./muavip.html'">Mua Vip</button>
+                <button type="button" id="signin-btn" class="btn btn-primary btn-gradient m-2"
+                    onclick="window.location.href='./signin.html'">Đăng Nhập</button>
+                <button type="button" id="signup-btn" class="btn btn-primary btn-gradient me-1"
+                    onclick="window.location.href='./signup.html'">Đăng Ký</button>
+                <button type="button" class="btn btn-gradient-yellow" onclick="window.location.href='./muavip.html'">Mua
+                    Vip</button>
             </div>
         </div>
-    
+
     </div>
-    
+
     <h1 class="text-center text-uppercase text-danger bg-light mb-0">SayGex69.vip xin chào quý khách!</h1>
 
     <div id="content" class="container">
@@ -81,7 +89,8 @@
 
                     <!-- Modal footer -->
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary btn-gradient" data-bs-dismiss="modal">Bỏ qua</button>
+                        <button type="button" class="btn btn-primary btn-gradient" data-bs-dismiss="modal">Bỏ
+                            qua</button>
                     </div>
 
                 </div>
@@ -97,23 +106,31 @@
                     </div>
                     <div class="modal-body">
                         <h4>
-                            Dự án này chỉ mang tính chất giáo dục, nhằm cung cấp kiến thức và kỹ năng cho học viên trong quá trình học tập.
-                        Mọi thông tin và nội dung trong dự án đều phục vụ cho mục đích học hỏi và nghiên cứu, không nhằm mục đích thương mại
-                        hay vi phạm bản quyền. Dự án không có ý xúc phạm cá nhân hay tập thể nào, và người tham gia cần tuân thủ các quy định về đạo đức học thuật, 
-                        đảm bảo không sử dụng thông tin hoặc sản phẩm từ dự án vào các hoạt động không phù hợp với mục tiêu giáo dục đã đề ra.
+                            Dự án này chỉ mang tính chất giáo dục, nhằm cung cấp kiến thức và kỹ năng cho học viên trong
+                            quá trình học tập.
+                            Mọi thông tin và nội dung trong dự án đều phục vụ cho mục đích học hỏi và nghiên cứu, không
+                            nhằm mục đích thương mại
+                            hay vi phạm bản quyền. Dự án không có ý xúc phạm cá nhân hay tập thể nào, và người tham gia
+                            cần tuân thủ các quy định về đạo đức học thuật,
+                            đảm bảo không sử dụng thông tin hoặc sản phẩm từ dự án vào các hoạt động không phù hợp với
+                            mục tiêu giáo dục đã đề ra.
                         </h4>
                         <hr>
                         iwatchMLP1212 / Trần Duy Minh
                         <br><br>
                         <div class="text-center">
-                            <a href="https://github.com/iwatchMLP1212/saygex69.vip-website">Mã nguồn & giấy phép (Github)</a>
+                            <a href="https://github.com/iwatchMLP1212/saygex69.vip-website">Mã nguồn & giấy phép
+                                (Github)</a>
                             <br><br>
-                            <a href="https://youtu.be/Hxgo-Qu-ZZE?si=5O6Vm_LsBtGinUB-&t=17" class="link-secondary">© 2024 Công Ty Trách Nhiệm Hữu Hạn Trần Duy Minh, Tổng Thống Dương Văn Minh & Đô Đốc Lê Đức Huy. <br>
+                            <a href="https://youtu.be/Hxgo-Qu-ZZE?si=5O6Vm_LsBtGinUB-&t=17" class="link-secondary">©
+                                2024 Công Ty Trách Nhiệm Hữu Hạn Trần Duy Minh, Tổng Thống Dương Văn Minh & Đô Đốc Lê
+                                Đức Huy. <br>
                                 Giấy phép MIT / MIT License</a>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-primary btn-gradient" data-bs-dismiss="modal">Bỏ qua</button>
+                        <button type="button" class="btn btn-primary btn-gradient" data-bs-dismiss="modal">Bỏ
+                            qua</button>
                     </div>
                 </div>
             </div>
@@ -128,38 +145,40 @@
 
     <footer id="footer" class="bg-dark text-white text-center text-lg-start" style="display: none; margin-top: 100px;">
         <div class="container p-4">
-          <div class="row">
-            <!-- Column 1: About -->
-            <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
-              <h5 class="text-uppercase">Sứ mệnh của chúng tôi</h5>
-              <p>
-                Chúng tôi tự hào là dịch vụ các ông bố đơn thân số 1 Việt Nam với tỉ lệ sex gay lên đến 99% các bạn bị thông đít. Cùng các tư thế sex gay kích thích như BDSM, sục cặc chéo,... Vân vân. Cùng
-                các dịch vụ làm sạch khác như liếm lỗ đít, liếm dái và nuốt lưỡi. Còn chần chờ gì nữa mà không book ngay một ông bố đơn thân trên saygex69 online!
-              </p>
-            </div>
-      
-            <!-- Column 2: Social Media -->
-            <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-center">
-              <h5 class="text-uppercase">Theo dõi chúng tôi</h5>
-              <ul class="list-unstyled">
-                <li><a href="https://www.youtube.com/@Saysgex69" class="text-white">Youtube</a></li>
-                <li><a href="https://www.youtube.com/@Saysgex69" class="text-white">Facebook</a></li>
-                <li><a href="https://www.youtube.com/@Saysgex69" class="text-white">Twitter</a></li>
-                <li><a href="https://www.youtube.com/@Saysgex69" class="text-white">Instagram</a></li>
-              </ul>
-            </div>
-      
-        <!-- Copyright -->
-        <div class="text-center p-3 bg-secondary">
-            © 2024 Công Ty Trách Nhiệm Hữu Hạn Trần Duy Minh, Tổng Thống Dương Văn Minh & Đô Đốc Lê Đức Huy. 
-        </div>
-        <div class="text-center p-3 bg-secondary">
-            © 2024 Duy Minh, President Duong Van Minh & Admiral Le Duc Huy LLC.
-          </div>
-      </footer>
-<script src="loggedIn.js"></script>
-<script src="main.js"></script>
-<script src="firebase.js" type="module"></script>
+            <div class="row">
+                <!-- Column 1: About -->
+                <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Sứ mệnh của chúng tôi</h5>
+                    <p>
+                        Chúng tôi tự hào là dịch vụ các ông bố đơn thân số 1 Việt Nam với tỉ lệ sex gay lên đến 99% các
+                        bạn bị thông đít. Cùng các tư thế sex gay kích thích như BDSM, sục cặc chéo,... Vân vân. Cùng
+                        các dịch vụ làm sạch khác như liếm lỗ đít, liếm dái và nuốt lưỡi. Còn chần chờ gì nữa mà không
+                        book ngay một ông bố đơn thân trên saygex69 online!
+                    </p>
+                </div>
+
+                <!-- Column 2: Social Media -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-center">
+                    <h5 class="text-uppercase">Theo dõi chúng tôi</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.youtube.com/@Saysgex69" class="text-white">Youtube</a></li>
+                        <li><a href="https://www.youtube.com/@Saysgex69" class="text-white">Facebook</a></li>
+                        <li><a href="https://www.youtube.com/@Saysgex69" class="text-white">Twitter</a></li>
+                        <li><a href="https://www.youtube.com/@Saysgex69" class="text-white">Instagram</a></li>
+                    </ul>
+                </div>
+
+                <!-- Copyright -->
+                <div class="text-center p-3 bg-secondary">
+                    © 2024 Công Ty Trách Nhiệm Hữu Hạn Trần Duy Minh, Tổng Thống Dương Văn Minh & Đô Đốc Lê Đức Huy.
+                </div>
+                <div class="text-center p-3 bg-secondary">
+                    © 2024 Duy Minh, President Duong Van Minh & Admiral Le Duc Huy LLC.
+                </div>
+    </footer>
+    <script src="loggedIn.js"></script>
+    <script src="main.js"></script>
+    <script src="firebase.js" type="module"></script>
 </body>
 
 </html>

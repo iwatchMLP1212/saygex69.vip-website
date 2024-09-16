@@ -26,10 +26,10 @@
           <a class="nav-link text-white" href="./index.html">Trang chủ</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="./signin.html">Đăng Nhập</a>
+          <a class="nav-link text-white" href="./signin.html" id="signin-btn-mobile">Đăng Nhập</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="./signup.html">Đăng Ký</a>
+          <a class="nav-link text-white" href="./signup.html" id="signup-btn-mobile">Đăng Ký</a>
         </li>
         <li class="nav-item"></li>
         <a class="nav-link text-white" href="./xemcudoantuong.html">Dịch vụ xem cu đoán tướng</a>
@@ -55,9 +55,11 @@
       <div id="signup-signin" class="position-absolute end-0 translate-middle" style="padding-right: 30px;">
         <button type="button" id="signin-btn" class="btn btn-primary btn-gradient m-2"
           onclick="window.location.href='./signin.html'">Đăng Nhập</button>
-        <button type="button" id="signup-btn" class="btn btn-primary btn-gradient" onclick="window.location.href='./signup.html'">Đăng
+        <button type="button" id="signup-btn" class="btn btn-primary btn-gradient"
+          onclick="window.location.href='./signup.html'">Đăng
           Ký</button>
-          <button type="button" class="btn btn-gradient-yellow" onclick="window.location.href='./muavip.html'">Mua Vip</button>
+        <button type="button" class="btn btn-gradient-yellow" onclick="window.location.href='./muavip.html'">Mua
+          Vip</button>
       </div>
     </div>
 
@@ -65,9 +67,10 @@
 
   <div class="text-center text-danger">
     <h3>Chiều dài dương vật khi “mềm”: Khoảng 8.8 – 9.16 cm. Chiều dài dương vật khi cương cứng: Khoảng 12.9 – 14.2 cm.
-       Chu vi dương vật khi “mềm”: Trung bình khoảng 9 – 10 cm. Chu vi dương vật khi cương cứng: Trung bình khoảng 11 – 12 cm.
-       Tinh hoàn bình thường ở nam giới Việt có bán kính trung bình là 4 – 5,1 cm;
-      </h3>
+      Chu vi dương vật khi “mềm”: Trung bình khoảng 9 – 10 cm. Chu vi dương vật khi cương cứng: Trung bình khoảng 11 –
+      12 cm.
+      Tinh hoàn bình thường ở nam giới Việt có bán kính trung bình là 4 – 5,1 cm;
+    </h3>
   </div>
 
   <div id="content" class="container d-flex justify-content-center align-items-center" style="min-height: 50vh;">
@@ -140,8 +143,9 @@
         </div>
   </footer>
 
-  <script src="./xemcudoantuong.js">
-    const toggleSidebar = () => {
+  <script src="./xemcudoantuong.js"></script>
+  <script>
+     const toggleSidebar = () => {
       var sidebar = document.getElementById('sidebar');
       if (sidebar.style.display === 'none' || sidebar.style.display === '') {
         sidebar.style.display = 'block';

