@@ -1,5 +1,10 @@
 [
     {
+        "name": "HOT!!! DỊCH VỤ HỌP PHỤ HUYNH THUÊ (NAM & NỮ)",
+        "img": "./images/hop_phu_huynh_thue.jpg",
+        "description": "Các ông bố đẹp trai được cử đi để họp phụ huynh thuê!"
+    },
+    {
         "name": "Ông bố đơn thân 1",
         "img": "./images/bo_don_than/bo_don_than1.jpg",
         "description": "Ông bố đơn thân 34 tuổi này đã độc thân được 5 năm. Hãy book ngay chỉ 300k một giờ!"
@@ -23,5 +28,15 @@
         "name": "Ông bố đơn thân 5",
         "img": "./images/bo_don_than/bo_don_than5.jpg",
         "description": "1 TẶNG 1! Ông bố đơn thân một con sẵn sàng phục vụ bạn chỉ 450k/giờ!"
+    },
+    {
+        "name": "Ông bố đơn thân 6",
+        "img": "./images/bo_don_than/bo_don_than6.jpg",
+        "description": "Ông bố đơn thân một con sẵn sàng phục vụ bạn chỉ 250k/giờ!"
+    },
+    {
+        "name": "Ông bố đơn thân 7",
+        "img": "./images/bo_don_than/bo_don_than7.jpg",
+        "description": "1 TẶNG 1! Ông bố đơn thân một con sẵn sàng phục vụ bạn chỉ 299k/giờ!"
     }
 ]
