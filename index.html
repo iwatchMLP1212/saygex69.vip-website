@@ -37,6 +37,9 @@
                 <li class="nav-item"></li>
                 <a class="nav-link text-white" href="./muavip.html">Các gói trả tiền</a>
                 </li>
+                <li class="nav-item"></li>
+                <a class="nav-link text-white" id="logout-mobile" style="display: none;" onclick="logout()">Đăng xuất</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -62,12 +65,15 @@
                     onclick="window.location.href='./signup.html'">Đăng Ký</button>
                 <button type="button" class="btn btn-gradient-yellow" onclick="window.location.href='./muavip.html'">Mua
                     Vip</button>
+                <button type="button" id="logout" class="btn btn-primary btn-gradient" style="display: none;" onclick="logout()">Đăng Xuất       
+                </button>
             </div>
         </div>
 
     </div>
 
     <h1 class="text-center text-uppercase text-danger bg-light mb-0">SayGex69.vip xin chào quý khách!</h1>
+    <h5 class="text-center mb-4 mt-3" style="cursor: pointer; text-decoration: underline; color: #0D6EFD;" onclick="window.location.href='https://forms.gle/nnhnRPtU86S2Dhsq5'">Đăng ký làm một ông bố trên saygex69?</h5>
 
     <div id="content" class="container">
         <!-- MODAL BELOW -->
@@ -78,13 +84,13 @@
 
                     <!-- Modal Header -->
                     <div class="modal-header">
-                        <h4 class="modal-title">Chúc mừng bạn đã book thành công!</h4>
+                        <h4 class="modal-title">Bạn Không Đủ Tiền!</h4>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
 
                     <!-- Modal body -->
                     <div class="modal-body">
-                        Bạn đã book thành công. Vui lòng đăng nhập để xem lại lịch sử book!
+                        <h5>Bạn không đủ tiền để book ông bố đơn thân này!</h5>
                     </div>
 
                     <!-- Modal footer -->
@@ -140,7 +146,10 @@
 
         <div class="card" id="cac-ong-bo-don-than">
         </div>
-
+        <nav aria-label="Page navigation" class="mt-3">
+            <ul class="pagination">
+            </ul>
+        </nav>
     </div>
 
     <footer id="footer" class="bg-dark text-white text-center text-lg-start" style="display: none; margin-top: 100px;">

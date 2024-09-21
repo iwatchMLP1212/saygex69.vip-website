@@ -29,8 +29,15 @@
                 <li class="nav-item">
                     <a class="nav-link text-white" href="./signup.html" id="signup-btn-mobile">Đăng Ký</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="./xemcudoantuong.html">Dịch vụ xem cu đoán tướng</a>
+                <li class="nav-item"></li>
+                <a class="nav-link text-white" href="./xemcudoantuong.html">Dịch vụ xem cu đoán tướng</a>
+                </li>
+                <li class="nav-item"></li>
+                <a class="nav-link text-white" href="./muavip.html">Các gói trả tiền</a>
+                </li>
+                <li class="nav-item"></li>
+                <a class="nav-link text-white" id="logout-mobile" style="display: none;" onclick="logout()">Đăng
+                    xuất</a>
                 </li>
             </ul>
         </div>
@@ -53,8 +60,13 @@
             <div id="signup-signin" class="position-absolute end-0 translate-middle" style="padding-right: 30px;">
                 <button type="button" id="signin-btn" class="btn btn-primary btn-gradient m-2"
                     onclick="window.location.href='./signin.html'">Đăng Nhập</button>
-                <button type="button" id="signup-btn" class="btn btn-primary btn-gradient"
+                <button type="button" id="signup-btn" class="btn btn-primary btn-gradient me-1"
                     onclick="window.location.href='./signup.html'">Đăng Ký</button>
+                <button type="button" class="btn btn-gradient-yellow" onclick="window.location.href='./muavip.html'">Mua
+                    Vip</button>
+                <button type="button" id="logout" class="btn btn-primary btn-gradient" style="display: none;"
+                    onclick="logout()">Đăng Xuất
+                </button>
             </div>
         </div>
 
@@ -74,7 +86,7 @@
                         <h4 class="text-muted">TRAN DUY MINH</h4>
                         <h5 class="text-muted">Agribank</h5>
                         <h5 class="text-muted">Số tài khoản: 5905205694295</h5>
-                        <h5 class="text-muted">699k cho một tháng</h5>
+                        <h5 class="text-muted">30k cho một tháng</h5>
                         <img src="./images/QR_sieuden.png" alt="QR code" class="mb-4">
                         <h4 class="text-danger">NỘI DUNG CHUYỂN KHOẢN GHI KÈM EMAIL CỦA TÀI KHOẢN (CHÚNG TÔI KHÔNG CHỊU
                             TRÁCH NGHIỆM VỚI TRƯỜNG HỢP KHÔNG CÓ EMAIL. DỊCH VỤ MẤT DƯỚI 2 NGÀY ĐỂ XỬ LÝ)</h4>
@@ -103,7 +115,7 @@
                         <h4 class="text-muted">TRAN DUY MINH</h4>
                         <h5 class="text-muted">Agribank</h5>
                         <h5 class="text-muted">Số tài khoản: 5905205694295</h5>
-                        <h5 class="text-muted">49k cho một tháng</h5>
+                        <h5 class="text-muted">10k cho một tháng</h5>
                         <img src="./images/QR_vip.png" alt="QR code" class="mb-4">
                         <h4 class="text-danger">NỘI DUNG CHUYỂN KHOẢN GHI KÈM EMAIL CỦA TÀI KHOẢN (CHÚNG TÔI KHÔNG CHỊU
                             TRÁCH NGHIỆM VỚI TRƯỜNG HỢP KHÔNG CÓ EMAIL. DỊCH VỤ MẤT DƯỚI 2 NGÀY ĐỂ XỬ LÝ)</h4>
@@ -133,7 +145,8 @@
                         <button type="button" id="signup-btn" class="btn btn-primary btn-gradient"
                             onclick="window.location.href='./signup.html'">Đăng Ký</button>
                         <div class="text-center">
-                            <br><br><hr>
+                            <br><br>
+                            <hr>
                             <a href="https://youtu.be/Hxgo-Qu-ZZE?si=5O6Vm_LsBtGinUB-&t=17" class="link-secondary">©
                                 2024 Công Ty Trách Nhiệm Hữu Hạn Trần Duy Minh, Tổng Thống Dương Văn Minh & Đô Đốc Lê
                                 Đức Huy. <br>
@@ -178,7 +191,7 @@
                         <h1 class="my-0 fw-normal">VIP</h1>
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title">49k <small class="text-muted">/ tháng</small></h1>
+                        <h1 class="card-title">10k <small class="text-muted">/ tháng</small></h1>
                         <ul class="list-unstyled mt-3 mb-4" style="padding-bottom: 59px;">
                             <li>Ưu tiên hỗ trợ qua email</li>
                             <li>Danh hiệu VIP</li>
@@ -198,7 +211,7 @@
                         <h1 class="my-0 fw-normal">Siêu Đen</h1>
                     </div>
                     <div class="card-body">
-                        <h1 class="card-title">699k <small class="text-muted">/ tháng</small></h1>
+                        <h1 class="card-title">30k <small class="text-muted">/ tháng</small></h1>
                         <ul class="list-unstyled mt-3 mb-4" style="padding-bottom: 35px;">
                             <li>Ưu tiên hỗ trợ qua điện thoại và email</li>
                             <li>Danh hiệu Siêu Đen</li>

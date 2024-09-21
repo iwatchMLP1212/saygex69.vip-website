@@ -34,6 +34,12 @@
         <li class="nav-item"></li>
         <a class="nav-link text-white" href="./xemcudoantuong.html">Dịch vụ xem cu đoán tướng</a>
         </li>
+        <li class="nav-item"></li>
+        <a class="nav-link text-white" href="./muavip.html">Các gói trả tiền</a>
+        </li>
+        <li class="nav-item"></li>
+        <a class="nav-link text-white" id="logout-mobile" style="display: none;" onclick="logout()">Đăng xuất</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -55,11 +61,13 @@
       <div id="signup-signin" class="position-absolute end-0 translate-middle" style="padding-right: 30px;">
         <button type="button" id="signin-btn" class="btn btn-primary btn-gradient m-2"
           onclick="window.location.href='./signin.html'">Đăng Nhập</button>
-        <button type="button" id="signup-btn" class="btn btn-primary btn-gradient"
-          onclick="window.location.href='./signup.html'">Đăng
-          Ký</button>
+        <button type="button" id="signup-btn" class="btn btn-primary btn-gradient me-1"
+          onclick="window.location.href='./signup.html'">Đăng Ký</button>
         <button type="button" class="btn btn-gradient-yellow" onclick="window.location.href='./muavip.html'">Mua
           Vip</button>
+        <button type="button" id="logout" class="btn btn-primary btn-gradient" style="display: none;"
+          onclick="logout()">Đăng Xuất
+        </button>
       </div>
     </div>
 
@@ -145,7 +153,7 @@
 
   <script src="./xemcudoantuong.js"></script>
   <script>
-     const toggleSidebar = () => {
+    const toggleSidebar = () => {
       var sidebar = document.getElementById('sidebar');
       if (sidebar.style.display === 'none' || sidebar.style.display === '') {
         sidebar.style.display = 'block';

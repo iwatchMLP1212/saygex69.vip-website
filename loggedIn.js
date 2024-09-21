@@ -22,13 +22,17 @@ if (localStorage.getItem('dXNlckVtYWls') !== null) {
     // Hide the sign-in and sign-up buttons if they exist
     const signinBtn = document.getElementById('signin-btn');
     const signupBtn = document.getElementById('signup-btn');
+    const logoutBtn = document.getElementById('logout')
     const signinBtnMobile = document.getElementById('signin-btn-mobile');
     const signupBtnMobile = document.getElementById('signup-btn-mobile');
+    const logoutBtnMobile = document.getElementById('logout-mobile')
 
     if (signinBtn) signinBtn.style.display = 'none';
     if (signupBtn) signupBtn.style.display = 'none';
+    if (logoutBtn) logoutBtn.style.display = 'inline-block';
     if (signinBtnMobile) signinBtnMobile.style.display = 'none';
     if (signupBtnMobile) signupBtnMobile.style.display = 'none';
+    if (logoutBtnMobile) logoutBtnMobile.style.display = 'inline-block';
 
     // Redirect if on signin.html or signup.html
     if (window.location.href.endsWith('signin.html') || window.location.href.endsWith('signup.html')) {

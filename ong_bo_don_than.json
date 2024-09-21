@@ -1,18 +1,13 @@
 [
     {
-        "name": "HOT!!! DỊCH VỤ HỌP PHỤ HUYNH THUÊ (NAM & NỮ)",
-        "img": "./images/hop_phu_huynh_thue.jpg",
-        "description": "Các ông bố đẹp trai được cử đi để họp phụ huynh thuê!"
-    },
-    {
         "name": "Ông bố đơn thân 1",
         "img": "./images/bo_don_than/bo_don_than1.jpg",
         "description": "Ông bố đơn thân 34 tuổi này đã độc thân được 5 năm. Hãy book ngay chỉ 300k một giờ!"
     },
     {
-        "name": "Ông bố đơn thân 2",
+        "name": "Ông bố đơn thân 2 (anh Ba)",
         "img": "./images/bo_don_than/bo_don_than2.jpg",
-        "description": "Ông bố đơn thân 40 tuổi. Book ngay!"
+        "description": "Anh Ba (Ambatukam) luôn là một trong những ông bố được ưu chuộng nhất website của chúng tôi! (Mua gói siêu đen để được làm tình với anh Ba miễn phí mỗi 2 tuần)"
     },
     {
         "name": "Ông bố đơn thân 3",
@@ -32,11 +27,41 @@
     {
         "name": "Ông bố đơn thân 6",
         "img": "./images/bo_don_than/bo_don_than6.jpg",
-        "description": "Ông bố đơn thân một con sẵn sàng phục vụ bạn chỉ 250k/giờ!"
+        "description": "Ông bố đơn thân đến từ A1 này sẵn sàng phục vụ bạn với giá cực ưu đãi. <br>1 triệu/giờ!"
     },
     {
         "name": "Ông bố đơn thân 7",
         "img": "./images/bo_don_than/bo_don_than7.jpg",
-        "description": "1 TẶNG 1! Ông bố đơn thân một con sẵn sàng phục vụ bạn chỉ 299k/giờ!"
+        "description": "Ông bố đơn thân sẵn sàng phục vụ bạn chỉ 299k/giờ!"
+    },
+    {
+        "name": "Ông bố đơn thân 8",
+        "img": "./images/bo_don_than/bo_don_than8.jpg",
+        "description": "Ông bố đơn thân cực dâm cực đen này sẵn sàng phục vụ bạn chỉ 299k/giờ!"
+    },
+    {
+        "name": "Ông bố đơn thân 9 (Bốn Lù)",
+        "img": "./images/bo_don_than/bo_don_than9.jpeg",
+        "description": "Bốn lù đơn thân cực dâm cực đen này sẵn sàng phục vụ bạn chỉ 299k/giờ!"
+    },
+    {
+        "name": "Ông bố đơn thân 10",
+        "img": "./images/bo_don_than/bo_don_than10.jpg",
+        "description": "Ông bố siêu đơn thân siêu dâm siêu đen này sẵn sàng phục vụ bạn với mức giá siêu ưu đãi chỉ 599k/giờ"
+    },
+    {
+        "name": "Ông bố đơn thân 11",
+        "img": "./images/bo_don_than/bo_don_than11.jpg",
+        "description": "Ông bố đơn thân cực dâm cực đen này sẵn sàng phục vụ bạn chỉ 499k/giờ!"
+    },
+    {
+        "name": "Ông bố đơn thân 12",
+        "img": "./images/bo_don_than/bo_don_than12.jpg",
+        "description": "Ông bố đơn thân cực dâm siêu đen này sẵn sàng phục vụ bạn chỉ 399k/giờ!"
+    },
+    {
+        "name": "Ông bố đơn thân 13 (Nguyễn Hùng Em)",
+        "img": "./images/bo_don_than/bo_don_than13.jpg",
+        "description": "Nguyễn Hùng Em 38 tuổi. Ông bố đơn thân 38 tuổi cực dâm siêu đen này sẵn sàng phục vụ bạn, 699k/giờ!"
     }
 ]
